@@ -24,3 +24,14 @@ Database download from the UniProt with the term 'Ig-like', considering only the
     2 --> 3("HMMER")
     2 --> 4("Blastp")
 ```
+
+#### Results
+
+<a href="./src/blastp.sh">Script</a> used for blastp search. The parameters considered included an e-value of 1e-3, and several identity and coverage cutoffs.
+
+Contigs with Ig-like proteins predicted with blastp:
+<img src="./graphs/blastp_results_contigs.png" alt="blastp results contigs"/>
+
+Proteins with homology to Ig-like proteins:
+<img src="./graphs/blastp_results.png" alt="blastp results"/>
+
