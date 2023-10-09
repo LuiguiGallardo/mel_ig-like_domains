@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # blastp: 2.5.0+
-
 cat ../02_prodigal/prodigal_Fagoma_Raton_5498.faa | \
     blastp -db ../01_databases/uniprotkb_ig_like_AND_reviewed_true_2023_09_30.fasta \
     -num_threads 12 -evalue 1e-3 \

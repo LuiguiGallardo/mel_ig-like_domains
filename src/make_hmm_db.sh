@@ -4,3 +4,7 @@
 # clustalo: 1.2.4
 clustalo -i ../01_databases/01_reviewed/uniprotkb_ig_like_AND_reviewed_true_2023_09_30.fasta -o ../01_databases/01_reviewed/uniprotkb_ig_like_AND_reviewed_true_2023_09_30_aligned.fasta --full --threads 12
 
+# hmmer: HMMER 3.1b2
+hmmbuild ../01_databases/01_reviewed/uniprotkb_ig_like_AND_reviewed_true_2023_09_30_aligned.hmm ../01_databases/01_reviewed/uniprotkb_ig_like_AND_reviewed_true_2023_09_30_aligned.fasta
+
+hmmpress ../01_databases/01_reviewed/uniprotkb_ig_like_AND_reviewed_true_2023_09_30_aligned.hmm
